@@ -5,6 +5,11 @@ def square(n):
 
 
 def iseven(n):
+    """
+    Checks whether the given number is even number
+    Param n is the number to check
+    Returns True or False
+    """
     return n % 2 == 0
 
 
