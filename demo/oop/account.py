@@ -1,3 +1,13 @@
+# Userdefined Exception
+class BalanceError(Exception):
+    def __init__(self, amount, balance):
+        self.amount = amount
+        self.balance = balance
+
+    def __str__(self):
+        return f"Insufficient balance. Available balance {self.balance}, but expected {self.amount}"
+
+
 class SavingsAccount:
     # Class attribute
     minbal = 5000
@@ -26,7 +36,7 @@ class SavingsAccount:
         if self.availablebalance >= amount:
             self.balance -= amount
         else:
-            print("Insufficient Balance")
+            raise BalanceError(amount, self.balance)
 
     def __str__(self):
         return f"{self.acno} - {self.ahname} - {self.balance}"
@@ -39,5 +49,6 @@ class SavingsAccount:
 
 
 a1 = SavingsAccount(1, "Bill")
+a1.withdraw(10000)
 a1.deposit(10000)
 print(a1.availablebalance)
