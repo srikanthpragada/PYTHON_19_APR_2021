@@ -1,0 +1,8 @@
+This is to test     how to count how many times a word is present in a file
+This needs a     dictionary
+
+
+We split lines into     words using space
+
+
+This is to test only
