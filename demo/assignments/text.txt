@@ -1,4 +1,4 @@
-This is to test     how to count how many times a word is present in a file
+This is to test     how to count how many, times a word is present in a file
 This needs a     dictionary
 
 
