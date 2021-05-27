@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="" ?>
+<books>
+    <book>
+        <title>Python Basics</title>
+        <price>560</price>
+    </book>
+    <book>
+        <title>Python for Data Analysis</title>
+        <price>760</price>
+    </book>
+    <book>
+        <title>Hands on Machine Learning</title>
+        <price>1660</price>
+    </book>
+</books>
